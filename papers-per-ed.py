@@ -1,5 +1,10 @@
 '''
 Creates file with key value pairs
+(number of editors handling papers each month)
+
+sample data:
+date , ID_1 , ID_2 , text, text, num, num, text, name (key)
+script counts the instances of row[8] 
 
 '''
 
