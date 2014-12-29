@@ -1,5 +1,5 @@
 '''
-Report Reader
+Report Reader: top-30
 
 Provides counts and percentages for items grouped by their values:
 1-3
@@ -9,8 +9,8 @@ sum (1-30)
 '''
 
 print
-fhand = raw_input('Enter filename: ')
-mypath = '../data/raptor_data/' + fhand
+fdate = raw_input('Enter date (mmyy): ')
+mypath = '../data/raptor_data/' + fdate + '_queues.csv'
 import csv
 with open(mypath, 'rU') as f:
     reader = csv.reader(f)
