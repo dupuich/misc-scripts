@@ -1,4 +1,4 @@
-## top-30.py
+### top-30.py
 
 input: 
 
@@ -8,7 +8,7 @@ output:
 
 - pick up rate for invites 1-3, 4-6, 7-30, 1-30
 
-## papers-per-ed.py
+### papers-per-ed.py
 
 input: 
 
