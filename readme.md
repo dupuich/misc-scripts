@@ -1,4 +1,8 @@
+The scripts below are designed to process Raptor reports saved as csv that are saved locally. Updating how files are handled may be necessary.
+
 ### top-30.py
+
+Provides the percentage of manuscripts picked up by invitation group.
 
 input: 
 
@@ -10,30 +14,35 @@ output:
 
 ### papers-per-ed.py
 
+Provides the number of editors who accept invitations to handle manuscripts. When a filename is provided, a file is created showing the number of manuscripts picked up by each editor
+
 input: 
 
 - AE Invitation Queue
 
 output: 
 
-- number of editors handling papers
-- file with number of papers picked up by each editor
+- number of editors handling manuscripts
+- file with number of manuscripts picked up by each editor
 
-## declines.py , get_totals.py
+### declines.py , get_totals.py
+
+Provides counts relating to the number of times editors indicate that they are declining invitations to handle manuscripts because they fall outside their area of expertise.
 
 input:
 
 - ONE Decines
-- number of docs queued
+- number of docs queued (found in AE Invitation Queue Summary report)
 
 output:
 
-- Total out of area declines
-- Out of area declines per 100 docs queued
-- Papers with 6 or more out of area declines
+- total out of area declines
+- out of area declines per 100 docs queued
+- manuscripts with 6 or more out of area declines
 - file with out of area declines per editor
+- percent of excessive declines (total declines not including the first 5 declines for each manuscript)
 
-## queue-position.py
+### queue-position.py
 
 input:
 
@@ -43,7 +52,7 @@ output:
 
 - creates file with number of ms assigned by queue position
 
-## grouped_declines.py
+### grouped_declines.py
 
 input:
 
