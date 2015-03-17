@@ -120,3 +120,4 @@ def decline_report(fname, oname):
             writer.writerow(['Name', 'Manuscripts'])
             for v,k in li:
                 writer.writerow([k, v])
+
