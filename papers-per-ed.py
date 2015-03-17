@@ -52,4 +52,4 @@ if len(make_report) > 0:
         for key, val in d.items():
             writer.writerow([key, val])
 
-        print "file", make_report, "created"        
+        print "file", make_report, "created"
