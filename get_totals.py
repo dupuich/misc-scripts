@@ -37,6 +37,7 @@ def six_or_more(fname):
     firstline = True
     paper_dictionary = {}
     count_six_plus = 0
+    xdeclines = 0
 
     fhand = open(fname)
     for line in fhand:
@@ -65,7 +66,14 @@ def six_or_more(fname):
             count_six_plus += 1
     
     evaluated = len(paper_dictionary)
-    return(count_six_plus, evaluated)
+    
+
+    for paper in paper_dictionary:
+        if paper_dictionary[paper] < 6:
+            continue
+        xdeclines = xdeclines + (paper_dictionary[paper]-5)
+
+    return(count_six_plus, evaluated, xdeclines)
 
 
 def decline_report(fname, oname):
@@ -112,4 +120,3 @@ def decline_report(fname, oname):
             writer.writerow(['Name', 'Manuscripts'])
             for v,k in li:
                 writer.writerow([k, v])
-
