@@ -1,5 +1,7 @@
 The scripts below are designed to process Raptor reports saved as csv that are saved locally. Updating how files are handled may be necessary.
 
+Note: format of ONE declines changed in fall 2015 to include an additional column for GUID - adding a blank column to existing reports (or re-running them) addresses this.
+
 ### top-30.py
 
 Provides the percentage of manuscripts picked up by invitation group.
